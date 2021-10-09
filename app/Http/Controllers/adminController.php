@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 class adminController extends Controller
 {
     public function generateLayoutMaster(){
-        return view('Admin.home');
+        return view('Admin.formtab');
     }
 
     public function advanpage(){
-        return view('Admin.advanced');
+        return view('Admin.tabletab');
     }
 }
