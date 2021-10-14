@@ -9,92 +9,73 @@
                 <a href="#" class="fa fa-times"></a>
             </div>
 
-            <h2 class="panel-title">Form Elements</h2>
+            <h2 class="panel-title">Add new event</h2>
         </header>
         <div class="panel-body">
-            <form class="form-horizontal form-bordered" method="get">
-
+            <form class="form-horizontal form-bordered" method="post" action="/form">
+                @csrf
                 <div class="form-group">
-                    <label class="col-md-3 control-label">Left Icon</label>
+                    <label class="col-md-3 control-label">Event Name</label>
                     <div class="col-md-6">
                         <div class="input-group input-group-icon">
-														<span class="input-group-addon">
-															<span class="icon"><i class="fa fa-user"></i></span>
-														</span>
-                            <input type="text" class="form-control" placeholder="Left icon">
+                            <input type="text" name="eventName" class="form-control" placeholder="Event Name">
                         </div>
                     </div>
                 </div>
-
                 <div class="form-group">
-                    <label class="col-md-3 control-label">Right Icon</label>
+                    <label class="col-md-3 control-label">Band Name</label>
                     <div class="col-md-6">
                         <div class="input-group input-group-icon">
-                            <input type="text" class="form-control" placeholder="Right icon">
-                            <span class="input-group-addon">
-															<span class="icon"><i class="fa fa-user"></i></span>
-														</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 control-label">Search</label>
-                    <div class="col-md-6">
-                        <div class="input-group input-search">
-                            <input type="text" class="form-control" name="q" id="q" placeholder="Search...">
-                            <span class="input-group-btn">
-															<button class="btn btn-default" type="submit"><i
-                                                                    class="fa fa-search"></i></button>
-														</span>
+                            <input type="text" name="bandNames" class="form-control" placeholder="Band Name">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-3 control-label">Vertical Group</label>
+                    <label class="col-md-3 control-label">Start Date</label>
                     <div class="col-md-6">
-                        <section class="form-group-vertical">
-                            <input class="form-control" type="text" placeholder="Username">
-                            <input class="form-control" type="text" placeholder="Email">
-                            <input class="form-control last" type="password" placeholder="Password">
-                        </section>
+                        <div class="input-group input-group-icon">
+                            <input type="date" name="startDate" class="form-control">
+                        </div>
                     </div>
                 </div>
-
                 <div class="form-group">
-                    <label class="control-label col-md-3">Vertical Group w/ icon</label>
+                    <label class="col-md-3 control-label">End Date</label>
                     <div class="col-md-6">
-                        <section class="form-group-vertical">
-                            <div class="input-group input-group-icon">
-															<span class="input-group-addon">
-																<span class="icon"><i class="fa fa-user"></i></span>
-															</span>
-                                <input class="form-control" type="text" placeholder="Username">
-                            </div>
-                            <div class="input-group input-group-icon">
-															<span class="input-group-addon">
-																<span class="icon"><i class="fa fa-key"></i></span>
-															</span>
-                                <input class="form-control" type="text" placeholder="Password">
-                            </div>
-                        </section>
+                        <div class="input-group input-group-icon">
+                            <input type="date" name="endDate" class="form-control">
+                        </div>
                     </div>
-                    <div class="col-xs-12">
-                        <section class="panel">
-                            <div class="panel-body">
-                                <form class="form-horizontal form-bordered">
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Summernote</label>
-                                        <div class="col-md-9">
-                                            <div class="summernote" data-plugin-summernote
-                                                 data-plugin-options='{ "height": 250, "codemirror": { "theme": "ambiance" } }'>
-                                                Start typing...
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </section>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Portfolio</label>
+                    <div class="col-md-6">
+                        <div class="input-group input-group-icon">
+                            <input type="text" name="portfolio" class="form-control" placeholder="Portfolio">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Ticket Price</label>
+                    <div class="col-md-6">
+                        <div class="input-group input-group-icon">
+                            <input type="text" name="ticketPrice" class="form-control" placeholder="Ticket Price">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Status</label>
+                    <div class="col-md-6">
+                        <div class="input-group input-group-icon">
+                            <input type="text" name="status" class="form-control" placeholder="Status">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <div class="input-group input-group-icon">
+                            <button class="mb-xs mt-xs mr-xs btn btn-primary" style="float: right">Submit</button>
+                            <button type="button" class="mb-xs mt-xs mr-xs btn btn-danger" style="float: right">Cancel</button>
+                        </div>
                     </div>
                 </div>
             </form>

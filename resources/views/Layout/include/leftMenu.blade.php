@@ -17,17 +17,17 @@
             <li class="nav-parent nav-expanded nav-active">
                 <a>
                     <i class="fa fa-list-alt" aria-hidden="true"></i>
-                    <span>Forms</span>
+                    <span>AddEvent</span>
                 </a>
                 <ul class="nav nav-children">
                     <li>
                         <a href="/form">
-                            Form tab
+                            Add New Event
                         </a>
                     </li>
                     <li class="nav-active">
                         <a href="/table">
-                            Table tab
+                            Table Events
                         </a>
                     </li>
                 </ul>

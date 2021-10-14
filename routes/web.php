@@ -4,4 +4,5 @@ use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/form', [adminController::class, 'generateLayoutMaster']);
-Route::get('/table', [adminController::class, 'advanpage']);
+Route::post('/form', [adminController::class, 'addNewEvent']);
+Route::get('/table', [adminController::class, 'getAllEvent']);
