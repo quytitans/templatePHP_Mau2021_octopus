@@ -32,6 +32,7 @@ class adminController extends Controller
     public function getAllEvent()
     {
         $events = DB::table('events')->get();
-        return view('Admin.tabletab', $events);
+        return view('Admin.tabletab', ['events' => $events]);
+
     }
 }
